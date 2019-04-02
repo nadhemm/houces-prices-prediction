@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>za3ma 9adeh? Predict housing prices in Tunis</title>
+</head>
+<body>
+<center>
+    Hello, start your search now!
+    <form method="post" action="{{ url_for('home')}}">
+        <br><label for="model">model </label><input type="text" name="model">
+        <br><label for="living_surface">living_surface </label><input type="text" name="living_surface">
+        <br><label for="total_surface">total_surface </label><input type="text" name="total_surface">
+        <br><label for="number_of_rooms">number_of_rooms </label><input type="text" name="number_of_rooms">
+        <br><label for="total_rooms">total_rooms </label><input type="text" name="total_rooms">
+        <br><label for="bathrooms">bathrooms </label><input type="text" name="bathrooms">
+        <br><label for="gov">gov </label><input type="text" name="gov">
+        <br><label for="address">address </label><input type="text" name="address">
+        <input type="submit">
+    </form>
+    {% if price %}
+    <h1>The estimated price for your house is: </h1>
+    <b>{{ price }} TND</b>
+    {% endif %}
+</center>
+</body>
+
+</html>
