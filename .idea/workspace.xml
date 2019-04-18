@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8a52d5b-36bf-4ee8-9776-e813dad00440" name="Default Changelist" comment="" />
+    <list default="true" id="e8a52d5b-36bf-4ee8-9776-e813dad00440" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask_app/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask_app/templates/home.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,15 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flask_app/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-              <folding>
-                <element signature="e#0#23#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="42">
+              <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -25,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/flask_app/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="2310">
+              <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -49,6 +50,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>home</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -56,10 +62,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/flask_app/houses_prices_model.py" />
-        <option value="$PROJECT_DIR$/flask_app/app.py" />
-        <option value="$PROJECT_DIR$/flask_app/templates/home.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/flask_app/app.py" />
+        <option value="$PROJECT_DIR$/flask_app/templates/home 1.html" />
+        <option value="$PROJECT_DIR$/flask_app/templates/home.html" />
       </list>
     </option>
   </component>
@@ -74,7 +81,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -82,10 +88,22 @@
               <item name="Projet data mining" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projet data mining" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projet data mining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet data mining" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Projet data mining" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projet data mining" type="462c0819:PsiDirectoryNode" />
+              <item name="flask_app" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -121,16 +139,18 @@
       <updated>1554164965452</updated>
       <workItem from="1554164969238" duration="74000" />
       <workItem from="1554165389032" duration="5965000" />
+      <workItem from="1555407865405" duration="2444000" />
+      <workItem from="1555624486675" duration="328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6039000" />
+    <option name="totallyTimeSpent" value="8700000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.257886" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -144,7 +164,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.36177105" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -157,33 +177,8 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flask_app/houses_prices_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_app/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="102" column="9" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask_app/houses_prices_model.ipynb">
-      <provider selected="true" editor-type-id="jupyter-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/houses_prices_model.py" />
+    <entry file="file://$PROJECT_DIR$/flask_app/houses_prices_model.ipynb" />
     <entry file="file://$PROJECT_DIR$/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -194,10 +189,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flask_app/templates/home 1.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/flask_app/templates/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="2310">
+          <caret line="154" column="7" selection-start-line="154" selection-start-column="7" selection-end-line="154" selection-end-column="7" />
         </state>
       </provider>
     </entry>

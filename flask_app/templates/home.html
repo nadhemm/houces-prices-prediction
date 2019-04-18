@@ -2,27 +2,154 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>za3ma 9adeh? Predict housing prices in Tunis</title>
+    <title>Predict housing prices in Tunis</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 </head>
 <body>
-<center>
-    Hello, start your search now!
+<div class="container">
+    <h1 class="text-center">Hello, start your search now!</h1>
     <form method="post" action="{{ url_for('home')}}">
-        <br><label for="model">model </label><input type="text" name="model">
-        <br><label for="living_surface">living_surface </label><input type="text" name="living_surface">
-        <br><label for="total_surface">total_surface </label><input type="text" name="total_surface">
-        <br><label for="number_of_rooms">number_of_rooms </label><input type="text" name="number_of_rooms">
-        <br><label for="total_rooms">total_rooms </label><input type="text" name="total_rooms">
-        <br><label for="bathrooms">bathrooms </label><input type="text" name="bathrooms">
-        <br><label for="gov">gov </label><input type="text" name="gov">
-        <br><label for="address">address </label><input type="text" name="address">
-        <input type="submit">
+        <div class="form-group row">
+        <label for="model" class="col-sm-2 col-form-label">Model</label>
+        <div class="col-sm-10">
+        <select class="form-control" name="model">
+            <option value="linear_regression">Linear Regression</option>
+            <option value="decision_tree">Decision Tree</option>
+            <option value="random_forest">Random Forest</option>
+        </select>
+        </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Living surface</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="living_surface" placeholder="living_surface">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Total surface</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="total_surface" placeholder="total_surface">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Number of rooms</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="number_of_rooms" placeholder="number_of_rooms">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Total rooms</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="total_rooms" placeholder="total_rooms">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Bathrooms</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="bathrooms" placeholder="bathrooms">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label  class="col-sm-2 col-form-label">Government</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="gov">
+                    <option value="Tunis">Tunis</option>
+                    <option value="Ben Arous">Ben Arous</option>
+                    <option value="Ariana">Ariana</option>
+                    <option value="Manouba">Manouba</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Address</label>
+            <div class="col-sm-10">
+                <select class="form-control" name="address" type="text">
+                    <option value="Jardin De Carthage">Jardin De Carthage</option>
+                    <option value="Les Berges Du Lac">Les Berges Du Lac</option>
+                    <option value="Le Kram">Le Kram</option>
+                    <option value="La Marsa">La Marsa</option>
+                    <option value="Aïn Zaghouan">Aïn Zaghouan</option>
+                    <option value="Le Bardo">Le Bardo</option>
+                    <option value="Gammarth">Gammarth</option>
+                    <option value="Agba">Agba</option>
+                    <option value="Carthage">Carthage</option>
+                    <option value="Médina">Médina</option>
+                    <option value="Sidi Hassine">Sidi Hassine</option>
+                    <option value="Centre Ville - Lafayette">Centre Ville - Lafayette</option>
+                    <option value="L'aouina">L'aouina</option>
+                    <option value="Sidi El Béchir">Sidi El Béchir</option>
+                    <option value="Sidi Daoud">Sidi Daoud</option>
+                    <option value="Sidi Bou Said">Sidi Bou Said</option>
+                    <option value="El Ouardia">El Ouardia</option>
+                    <option value="Hraïria">Hraïria</option>
+                    <option value="El Kabaria">El Kabaria</option>
+                    <option value="Mutuelleville">Mutuelleville</option>
+                    <option value="Cité El Khadra">Cité El Khadra</option>
+                    <option value="El Omrane supérieur">El Omrane supérieur</option>
+                    <option value="La Goulette">La Goulette</option>
+                    <option value="Séjoumi">Séjoumi</option>
+                    <option value="Centre Urbain Nord">Centre Urbain Nord</option>
+                    <option value="Ezzouhour">Ezzouhour</option>
+                    <option value="Djebel Jelloud">Djebel Jelloud</option>
+                    <option value="El Omrane">El Omrane</option>
+                    <option value="Cité Olympique">Cité Olympique</option>
+                    <option value="Ettahrir">Ettahrir</option>
+                    <option value="Mohamedia">Mohamedia</option>
+                    <option value="Mornag">Mornag</option>
+                    <option value="El Mourouj">El Mourouj</option>
+                    <option value="Radès">Radès</option>
+                    <option value="Boumhel">Boumhel</option>
+                    <option value="Fouchana">Fouchana</option>
+                    <option value="Medina Jedida">Medina Jedida</option>
+                    <option value="Ezzahra">Ezzahra</option>
+                    <option value="Mégrine">Mégrine</option>
+                    <option value="Borj Cedria">Borj Cedria</option>
+                    <option value="Hammam Chott">Hammam Chott</option>
+                    <option value="Hammam Lif">Hammam Lif</option>
+                    <option value="Ennasr">Ennasr</option>
+                    <option value="La Soukra">La Soukra</option>
+                    <option value="Menzah">Menzah</option>
+                    <option value="Ghazela">Ghazela</option>
+                    <option value="Mnihla">Mnihla</option>
+                    <option value="Manar">Manar</option>
+                    <option value="Raoued">Raoued</option>
+                    <option value="Ariana Ville">Ariana Ville</option>
+                    <option value="Jardins D'el Menzah">Jardins D'el Menzah</option>
+                    <option value="Chotrana">Chotrana</option>
+                    <option value="Borj Louzir">Borj Louzir</option>
+                    <option value="Sidi Thabet">Sidi Thabet</option>
+                    <option value="Ettadhamen">Ettadhamen</option>
+                    <option value="Kalaât El Andalous">Kalaât El Andalous</option>
+                    <option value="Denden">Denden</option>
+                    <option value="Manouba Ville">Manouba Ville</option>
+                    <option value="Djedeida">Djedeida</option>
+                    <option value="Mornaguia">Mornaguia</option>
+                    <option value="Borj El Amri">Borj El Amri</option>
+                    <option value="Tebourba">Tebourba</option>
+                    <option value="Oued Ellil">Oued Ellil</option>
+                    <option value="Douar Hicher">Douar Hicher</option>
+                    <option value="El Battan">El Battan</option>
+                </select>
+            </div>
+        </div>
+
+
+        <!--</div>-->
+        <div class="form-group row">
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">validate</button>
+            </div>
+        </div>
     </form>
+</div>
+<div class="text-center">
     {% if price %}
-    <h1>The estimated price for your house is: </h1>
-    <b>{{ price }} TND</b>
-    {% endif %}
-</center>
+    <h2>The estimated price for your house is: </h2>
+        <b>{{ price }} TND</b>
+        {% endif %}
+</div>
+</div>
 </body>
 
 </html>
